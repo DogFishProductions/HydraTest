@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+ redis:
+  image: redis:3-alpine
+ 
+ hydra-test:
+  build: .
+  links:
+   - redis
+  user: dogfish
+  volumes:
+   - $PWD/..:/home/dogfish/app
+  command: sh ./scripts/hydra-cli-config.sh
