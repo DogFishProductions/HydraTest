@@ -9,6 +9,8 @@ services:
   links:
    - redis
   user: dogfish
+  ports:
+   - "6510:6510"
   volumes:
    - $PWD/..:/home/dogfish/app
-  command: sh ./scripts/hydra-cli-config.sh
+  command: sh ./scripts/hydra-cli-config.sh && sh ./scripts/startup.sh ${NODE_ENV}

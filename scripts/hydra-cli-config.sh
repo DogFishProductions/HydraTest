@@ -1,6 +1,7 @@
-~/.npm-global/bin/hydra-cli config hydra-test << ANSWERS
+source ~/.profile
+hydra-cli config hello-service << ANSWERS
 redis
 6379
 15
 ANSWERS
-~/.npm-global/bin/hydra-cli config list
+hydra-cli config list
