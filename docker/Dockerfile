@@ -9,7 +9,7 @@ LABEL version="1.0"
 
 # Add the relevant packages so that we can 'npm install'
 RUN apk update -q &&\
-    apk add --no-cache make gcc g++ python &&\
+    apk add --no-cache make gcc g++ python expect &&\
     apk upgrade
 
 # Create "dogfish" user

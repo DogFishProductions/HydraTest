@@ -1,11 +1,13 @@
-version: '3'
+version: '2'
 
 services:
  redis:
   image: redis:3-alpine
  
- hydra-test:
+ hydra:
   build: .
+  depends_on:
+   - redis
   links:
    - redis
   user: dogfish
@@ -13,4 +15,4 @@ services:
    - "6510:6510"
   volumes:
    - $PWD/..:/home/dogfish/app
-  command: sh ./scripts/hydra-cli-config.sh && sh ./scripts/startup.sh ${NODE_ENV}
+  command: /bin/ash -c "sh ./scripts/hydra-cli-config.sh && sh ./scripts/startup.sh"
