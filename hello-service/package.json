@@ -15,7 +15,7 @@
     "docker:start:service": "cd ../docker && echo \"NODE_ENV=local\" > .env && docker-compose start hydra"
   },
   "engines": {
-    "node": ">=6.11.1"
+    "node": "6.11.1"
   },
   "dependencies": {
     "fwsp-config": "1.1.5",
