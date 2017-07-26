@@ -15,13 +15,11 @@ Using `expect` on the command line will now call the **Homebrew** version by def
 $ autoexpect -f create-<service-name>-service.exp yo fwsp-hydra
 ```
 
-Substitute `<service-name>` with the name of your service to be created. Follow the interactive prompts from the Yeoman generator. When complete, run:
+Substitute `<service-name>` with the name of your service to be created. Follow the interactive prompts from the Yeoman generator. When complete, run your script using:
 
 ```
-$ chmod +x create-<service-name>-service.exp
+$ expect create-<service-name>-service.exp
 ```
-
-Your `expect` file is now executable and can be run by simply calling it.
 
 ## References
  - [Hydra docs][hydra]
