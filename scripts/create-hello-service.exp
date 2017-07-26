@@ -43,7 +43,7 @@ if {$force_conservative} {
 
 
 set timeout -1
-spawn ~/.npm-global/bin/yo fwsp-hydra
+spawn yo fwsp-hydra
 match_max 100000
 expect -exact "\[33mfwsp-hydra generator v\[1m\[4m0.3.1\[24m\[22m\[39m   \[36myeoman-generator v\[1m\[4m1.1.1\[24m\[22m\[39m   \[32myo v\[1m\[4m2.0.0\[24m\[22m\[39m\r
 \[32m?\[39m \[1mName of the service (`-service` will be appended automatically)\[22m\[0m \[0m\[66D\[66C"
