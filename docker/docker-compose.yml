@@ -15,4 +15,4 @@ services:
    - "6510:6510"
   volumes:
    - $PWD/..:/home/dogfish/app
-  command: /bin/ash -c "sh ./scripts/hydra-cli-config.sh && sh ./scripts/startup.sh"
+  command: /bin/ash -c "sh ./scripts/hydra-cli-config.sh && sh ./scripts/startup.sh ${NODE_ENV}"
