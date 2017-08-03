@@ -1,6 +1,12 @@
 # HydraTest
 Learning Hydra for microservices.
 
+## Create a service
+
+```
+$ yo fwsp-hydra 
+```
+
 ## Creating a script to respond to a Yeoman Generator
 Yeoman generators don't use the standard input so it's not possible to use a [Unix Here Document][unix-here] to respond to them. We have to use the Unix `expect` [utility][expect] instead to create an interactive script. Macos comes with `expect` built in (it's at `/usr/bin/expect`) but this doesn't come with the excellent `autoexpect` [utility][autoexpect] which creates `expect` files automatically. To get this we have to use [**Homebrew**][homebrew]:
 
