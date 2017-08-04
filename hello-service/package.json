@@ -11,7 +11,7 @@
     "debug": "node-debug hello-service.js --debug-brk",
     "test": "mocha specs --reporter spec",
     "docker": "node scripts/docker.js",
-    "docker:up:service": "cd ../docker && echo \"NODE_ENV=local\" > .env && && docker-compose up hydra",
+    "docker:up:service": "cd ../docker && echo \"NODE_ENV=local\" > .env && docker-compose up hydra",
     "docker:start:service": "cd ../docker && echo \"NODE_ENV=local\" > .env && docker-compose start hydra",
     "docker:stop:service": "cd ../docker && docker-compose stop hydra"
   },
